@@ -63,7 +63,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">banff_dataset_summarize</span><span class="op">(</span><span class="va">banff_dataset</span>, <span class="va">banff_dict</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">banff_dataset_summarize</span><span class="op">(</span><span class="va">banff_dataset</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -76,7 +76,7 @@
     <h2>Value</h2>
     
 
-<p>A tibble object which contain additional columns refering to diagnostics.</p>
+<p>A tibble object which contain additional columns refering to diagnosiss.</p>
     </div>
 
     <div id="ref-examples">
@@ -86,10 +86,10 @@
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/GuiFabre/fabR" class="external-link">fabR</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">banff_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"example.xlsx"</span>, package <span class="op">=</span> <span class="st">"lakebanff"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">banff_dataset</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/fabR/man/read_excel_allsheets.html" class="external-link">read_excel_allsheets</a></span><span class="op">(</span><span class="va">banff_file</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="add_diagnostic.html">add_diagnostic</a></span><span class="op">(</span><span class="va">banff_dataset</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">banff_dataset_summarize</span><span class="op">(</span><span class="va">banff_dataset</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="op">}</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in add_diagnostic(banff_dataset):</span> object 'language' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> data frame with 0 columns and 0 rows</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

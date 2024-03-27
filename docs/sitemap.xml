@@ -19,7 +19,7 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/add_diagnostic.html</loc>
+    <loc>/reference/add_diagnosis.html</loc>
   </url>
   <url>
     <loc>/reference/banff_dataset_evaluate.html</loc>
@@ -32,6 +32,9 @@
   </url>
   <url>
     <loc>/reference/calculate_adequacy.html</loc>
+  </url>
+  <url>
+    <loc>/reference/dataset_cat_as_labels.html</loc>
   </url>
   <url>
     <loc>/reference/get_banff_dictionary.html</loc>

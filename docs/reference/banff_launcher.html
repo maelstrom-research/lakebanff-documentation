@@ -3,8 +3,8 @@
 internally adresses series of tests that assess the input dataset. If any of
 these tests fails, the user gets information allowing them to correct the
 file and reprocess. Once the tests do not fail, the dataset is given for all
-the observation a diagnostic (using internally the
-function add_diagnostic()). The output dataset, along with its associated
+the observation a diagnosis (using internally the
+function add_diagnosis()). The output dataset, along with its associated
 labels (label:en by defaut) are provided to the user in an Excel format
 file accessibee in the output_folder they provided (working direct as a
 default.) The dataset comes with a report that summarize information about
@@ -72,8 +72,8 @@ variable distributions and descriptive statistics."><!-- mathjax --><script src=
 internally adresses series of tests that assess the input dataset. If any of
 these tests fails, the user gets information allowing them to correct the
 file and reprocess. Once the tests do not fail, the dataset is given for all
-the observation a diagnostic (using internally the
-function <code><a href="add_diagnostic.html">add_diagnostic()</a></code>). The output dataset, along with its associated
+the observation a diagnosis (using internally the
+function <code><a href="add_diagnosis.html">add_diagnosis()</a></code>). The output dataset, along with its associated
 labels (<code>label:en</code> by defaut) are provided to the user in an Excel format
 file accessibee in the output_folder they provided (working direct as a
 default.) The dataset comes with a report that summarize information about
@@ -104,7 +104,7 @@ the bookdown report files will be saved.</p></dd>
 
 
 <dt>language</dt>
-<dd><p>optional input allowing user to get their diagnostic in a
+<dd><p>optional input allowing user to get their diagnosis in a
 specific language. Options are "label:en" (default), "label:fr", "label:de",
 "label:sp", "label:nl", "label:jp", "label:in".</p></dd>
 
@@ -146,12 +146,24 @@ exists) where Excel files are stored.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [1/6] - Evaluation of input dataset </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [2/6] - Assessment of the file 'example'</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in summarize(., across(-(c(all_of(no_na_accepted))), (~all(is.na(.))))):</span> <span style="color: #00BBBB;">ℹ</span> In argument: `across(-(c(all_of(no_na_accepted))), (~all(is.na(.))))`.</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Caused by error in `across()`:</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> In argument: `all_of(no_na_accepted)`.</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Caused by error:</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00;">!</span> object 'no_na_accepted' not found</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [3/6] - add diagnosis to 'example'</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [4/6] - generate labels for each column of 'example'</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [5/6] - Assessment of the the output file 'example'</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [6/6] - Export XLSX files in 'RtmpyGADhw'</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> C:\Users\guill\AppData\Local\Temp\RtmpyGADhw/example-2024-03-27-101436-diagnosiss.xlsx</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> C:\Users\guill\AppData\Local\Temp\RtmpyGADhw/example-2024-03-27-101436-report.xlsx</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The assessment and addition of diagnosis on your dataset is now finished.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> In the output folder, you will find an Excel file containing both labels and codes</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> of your dataset and for each participant, additional columns corresponding to your</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> diagnosis.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> An assessment and summary report has been generated in your output folder to help you</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> assessing and interpret your dataset. You can open it as an Excel file.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> For further information please refer to documentation</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
